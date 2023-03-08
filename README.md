@@ -27,7 +27,7 @@ POST http://localhost:7777/technologies
 {
     "name": "name",
     "surname": "surname",
-    "email": "aasddsdQdd@gmail.com",
+    "email": "mail@gmail.com",
     "phoneNumber": "12312334234234"
 
 }
@@ -42,7 +42,7 @@ POST http://localhost:7777/technologies
 }
 
 
-POST http://localhost:7777/candidates/1/technologies
+POST http://localhost:7777/candidates/{id}/technologies
 
 {
     "technologyId": 1,
@@ -51,14 +51,7 @@ POST http://localhost:7777/candidates/1/technologies
 }
 
 
-GET http://localhost:7777/candidates/1/technologies
-
-{
-    "technologyId": 1,
-    "levelOfTechnology": 1,
-    "note": "Bad"
-}
-
+GET http://localhost:7777/candidates/{id}/technologies
 
 
 
