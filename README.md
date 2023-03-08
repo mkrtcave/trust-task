@@ -29,7 +29,6 @@ POST http://localhost:7777/technologies
     "surname": "surname",
     "email": "mail@gmail.com",
     "phoneNumber": "12312334234234"
-
 }
 
 GET http://localhost:7777/technologies 
