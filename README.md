@@ -20,9 +20,20 @@ mvn clean install
 
 ## Examples of usage
 
-GET http://localhost:7777/technologies 
+GET http://localhost:7777/candidates
 
-POST http://localhost:7777/technologies
+POST http://localhost:7777/candidates
+
+{
+    "name": "name",
+    "surname": "surname",
+    "email": "mail@gmail.com",
+    "phoneNumber": "12312334234234"
+}
+
+DELETE http://localhost:7777/candidates/{id}
+
+PUT http://localhost:7777/candidates/{id}
 
 {
     "name": "name",
@@ -40,6 +51,15 @@ POST http://localhost:7777/technologies
     "description": "Framework"
 }
 
+PUT http://localhost:7777/technologies 
+
+{
+    "name": "Spring",
+    "description": "Framework"
+}
+
+DELETE http://localhost:7777/technologies/{id}
+
 
 POST http://localhost:7777/candidates/{id}/technologies
 
@@ -52,6 +72,6 @@ POST http://localhost:7777/candidates/{id}/technologies
 
 GET http://localhost:7777/candidates/{id}/technologies
 
-
+GET http://localhost:7777//technologies/{id}/candidates
 
 
